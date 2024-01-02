@@ -1,0 +1,224 @@
+*{
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+:root{
+    --bg-color: #fff;
+    --main-color:#e55472;
+    --text-color:#010101;
+    --2nd-color:#434343;
+    --other-color:#666666;
+    --big-font: 5rem;
+    --h2-font:2.3rem;
+    --p-font: 1.3rem;
+}
+body{
+    color:var(--text-color);
+    background:var(--bg-color);
+}
+header{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right:0;
+    z-index:1000 ;
+    background: var(--bg-color);
+    box-shadow: 0 1p 6px 0rgb(32 33 36 /10%);
+    display: flex;
+    justify-content:space-between ;
+    align-items:center;
+    padding: 5px 1%;
+    transition: all .50s ease;
+
+}
+.logo img{
+    width: 100%;
+    height:auto;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color:var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 18px 24px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color:var(--main-color);
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+}
+.h-icons i{
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all .50s ease;
+}
+.h-icons i:hover{
+    transform: translateY(-4px);
+    color: var(--main-color);
+}
+#menu-icon{
+    height: 30px;
+    width: 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 60px 14px 70px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:url(re.jpeg) ;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+.home-text h1{
+    font-family: 'Leckerli One', cursive;
+    font-size:var(--big-font);
+    color:rgb(177, 109, 109) ;
+    line-height: 1,1;
+    margin-bottom: 50 px;
+}
+.home-text p{
+    color:var(--other-color);
+    font-size: var(--p-font);
+    line-height: 20px;
+    margin-bottom: 60px;
+}
+.btn{
+    padding: 20px 35px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.btn:hover{
+    background:var(--2nd-color);
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 2.5;
+}
+.banner-img{
+    overflow: hidden;
+}
+.banner-img img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.banner-img:hover img{
+    transform: scale(1.1);
+}
+.center-text h2{
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    color: var(--text-color);
+}
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4.5;
+    text-align: center;
+
+}
+.row{
+    position: relative;
+    cursor: pointer;
+
+}
+.row img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+}
+.row h4{
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all .50s ease;
+} 
+.row h4:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.row h5{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+}
+.top{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 30px;
+    width: 60px;
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.row .bbtn a{
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    padding: 13px;
+    background: rgba(0,0, 0, 0.8);
+    color: var(--bg-color);
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+.row:hover.bbtn a{
+    opacity: 1;
+
+}
+
+    
+
+
+
+   
